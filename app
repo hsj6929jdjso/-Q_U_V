@@ -15,7 +15,7 @@
       "description": "هنا ضع الاب ايدي الخاص بك يتكون من 8 أرقام", 
       "value": ""
     },
-    "API_HASH": {
+    "APP_HASH": {
       "description": "هنا ضع الايبي هاش الخاص بك",
       "value": ""
     },
@@ -23,7 +23,7 @@
       "description": "لا تغير هذه القيمة",
       "value": "ANYTHING"
     },
-    "STRING_SESSION": {
+    "TERMUX": {
       "description": "هنا ضع كود التيرمكس أو كود البايروجرام الخاص بك",
       "value": ""
     },
@@ -37,52 +37,12 @@
       "value": "",
       "required": false
     },
-    "TG_BOT_TOKEN": {
+    "TOKEN": {
       "description": "هنا ضع توكن بوتك الذي صنعته",
       "value": ""
     },
-    "TZ": {
-      "description": "المنطقة الزمنية من القارة الخاصة بك وعاصمة بلدك يجب أن يكون أول حرف كبير",
-      "value": "Asia/Baghdad",
+    "BOT_USERNAME": {
+      "description": "ضع يوزر البوت بدون@",
+      "value": "",
       "required": false
     }
-  },
-  "addons": [{
-    "plan": "heroku-postgresql",
-    "options": {
-      "version": "15"
-    }
-  }],
-  "buildpacks": [
-    {
-      "url": "https://github.com/jepthoniq/heroku-buildpack-ffmpeg-latest"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
-    },
-    {
-      "url": "https://github.com/riganf/heroku-buildpack-p7zip"
-    },
-    {
-      "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-apt.git"
-    },
-    {
-      "url": "https://github.com/chrismytton/heroku-buildpack-jq"
-    },
-    {
-      "url": "heroku/python"
-    }
-  ],
-  "formation": {
-    "worker": {
-      "quantity": 1
-    }
-  },
-  "stack": "heroku-22"
-}
